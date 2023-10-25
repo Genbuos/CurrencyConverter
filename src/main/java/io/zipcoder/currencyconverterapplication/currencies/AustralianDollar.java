@@ -6,11 +6,13 @@ import io.zipcoder.currencyconverterapplication.CurrencyType;
 import java.util.Currency;
 
 public class AustralianDollar implements ConvertableCurrency {
-    private CurrencyType AUS = CurrencyType.AUSTRALIAN_DOLLAR;
-    public AustralianDollar(){
+    private CurrencyType currencyType;
 
+    public AustralianDollar(){
+    this.currencyType = CurrencyType.AUSTRALIAN_DOLLAR;
     }
 
-
-
+    public CurrencyType getCurrencyType() {
+        return currencyType;
+    }
 }
