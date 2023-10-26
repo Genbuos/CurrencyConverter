@@ -6,9 +6,9 @@ public class CurrencyConverter {
             throw new IllegalArgumentException("Input parameters cannot be null.");
         }
 
-        double sourceRate = sourceCurrencyType.getCurrencyType(sourceCurrencyType).getRate();
+        double sourceRate = targetCurrencyType.getRate();
         double x = amountOfBaseCurrency * sourceRate;
-            double result = x / targetCurrencyType.getRate();
+            double result = x / sourceCurrencyType.getCurrencyType(sourceCurrencyType).getRate();
             return  result;
 
 
